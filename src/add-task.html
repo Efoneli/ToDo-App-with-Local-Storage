@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo | Test</title>
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e1fd2686c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/create.js" defer></script>
+  </head>
+  <body>
+    <div id="main-container" class="bg-white max-w-[425px] mx-auto relative">
+      <nav
+        class="shadow-sm container flex gap-3 justify-between items-center h-14 sticky top-0 bg-white"
+      >
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h5 class="font-semibold text-sm">Edit Task</h5>
+        <div></div>
+      </nav>
+
+      <main class="container mt-6">
+        <form action="" class="grid gap-8 min-h-full">
+          <div class="form-control-wrapper">
+            <label for="" class="form-control-label">Title</label>
+            <div class="form-control">
+              <input
+                type="text"
+                name="task-title"
+                placeholder="Go get groceries"
+              />
+            </div>
+          </div>
+          <div class="form-control-wrapper">
+            <label for="" class="form-control-label">Color Task</label>
+            <div class="flex gap-3 justify-between">
+              <div
+                data-color-selector-container
+                class="flex flex-wrap gap-3 items-center"
+              ></div>
+              <button
+                type="button"
+                id="color-selector-add-button"
+                class="h-5 w-5 rounded-full grid place-items-center bg-[#F2F2F2] text-xxs"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-control-wrapper">
+            <label for="" class="form-control-label">Deadline</label>
+            <div class="form-control">
+              <input
+                type="date"
+                name="deadline"
+                placeholder="12 October 2021, 01:30PM"
+              />
+              <div class="suffix">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-control-wrapper">
+            <label for="" class="form-control-label">Place</label>
+            <div class="form-control">
+              <input type="text" name="location" placeholder="Zoom At Home" />
+              <div class="suffix"><i class="fa-solid fa-location-dot"></i></div>
+            </div>
+          </div>
+          <div class="form-control-wrapper">
+            <label for="" class="form-control-label">Task Type</label>
+            <div class="flex flex-wrap gap-3">
+              <input
+                type="checkbox"
+                name="task_type"
+                value="basic"
+                id="basic-checkbox"
+                hidden
+              />
+              <label for="basic-checkbox" class="checkbox-button">
+                Basic
+              </label>
+              <input
+                type="checkbox"
+                name="task_type"
+                value="urgent"
+                id="urgent-checkbox"
+                hidden
+              />
+              <label for="urgent-checkbox" class="checkbox-button">
+                Urgent
+              </label>
+              <input
+                type="checkbox"
+                value="important"
+                name="task_type"
+                id="important-checkbox"
+                hidden
+              />
+              <label for="important-checkbox" class="checkbox-button">
+                Important
+              </label>
+            </div>
+          </div>
+          <button
+            id="add-task"
+            class="flex items-center justify-center gap-2 bg-primary-500 text-white h-10 rounded-full px-4 text-base mt-6"
+          >
+            Save Task
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

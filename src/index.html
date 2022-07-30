@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo | Test</title>
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e1fd2686c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="main-container" class="bg-white max-w-[425px] mx-auto relative">
+      <nav
+        class="shadow-sm container flex gap-3 justify-between items-center h-14 sticky top-0 bg-white"
+      >
+        <div
+          class="text-white bg-primary-500 h-8 w-8 rounded-full grid place-items-center text-sm"
+        >
+          <i class="fa-solid fa-gauge"></i>
+        </div>
+        <h5 class="font-semibold text-sm">Task Manager</h5>
+        <div><i class="fa-regular fa-bell"></i></div>
+      </nav>
+
+      <main class="container mt-6">
+        <header class="flex items-center gap-3 justify-between">
+          <div>
+            <h4 class="text-sm">Welcome Back!</h4>
+            <h2 class="text-xl font-semibold">Here's Update Today</h2>
+          </div>
+          <button
+            class="h-9 w-9 text-white bg-primary-500 grid place-items-center rounded-full"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </header>
+
+        <section class="mt-8 grid gap-6" id="task-list"></section>
+      </main>
+      <section
+        class="container sticky bottom-0 pb-6 pt-8 flex items-center justify-center bg-gradient-to-b from-transparent via-white to-white"
+      >
+        <a
+          href="add-task.html"
+          class="flex items-center gap-2 bg-primary-500 text-white h-10 rounded-full px-4 text-base"
+        >
+          <span
+            class="rounded grid h-4 w-4 bg-white text-primary-500 place-items-center"
+          >
+            <i class="fa-regular fa-plus"></i>
+          </span>
+          Add Task
+        </a>
+      </section>
+    </div>
+  </body>
+</html>
