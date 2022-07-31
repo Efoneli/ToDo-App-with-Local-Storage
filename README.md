@@ -1,4 +1,4 @@
-# functional ToDo-App with Local Storage
+# A functional ToDo-App with Local Storage
 
 Created to help manage time, 
 This app uses HTML, TailwindCSS, JavaScript and can be stored in Local Storage.
